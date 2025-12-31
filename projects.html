@@ -2,96 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects | Varshith</title>
+  <title>Projects | Varshith Goud</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      padding-top: 80px;
-    }
-
-    /* NAVBAR */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      background: rgba(2, 6, 23, 0.95);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-    }
-
-    nav a {
-      color: #cbd5f5;
-      text-decoration: none;
-      margin-left: 22px;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: #7c3aed;
-    }
-
-    /* CONTENT */
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-
-    h1 {
-      font-size: 36px;
-      color: #7c3aed;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-
-    /* PROJECT GRID */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-    }
-
-    .project-card {
-      background: #020617;
-      padding: 25px;
-      border-radius: 12px;
-      transition: transform 0.3s;
-    }
-
-    .project-card:hover {
-      transform: translateY(-6px);
-    }
-
-    .project-card h3 {
-      color: #38bdf8;
-      margin-bottom: 10px;
-    }
-
-    .project-card p {
-      color: #cbd5f5;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .tech {
-      margin-top: 15px;
-      font-size: 14px;
-      color: #94a3b8;
-    }
-  </style>
 </head>
 
 <body>
@@ -111,47 +30,45 @@
 
 <!-- PROJECTS CONTENT -->
 <div class="container">
+
   <h1>Projects</h1>
 
   <div class="projects">
 
-    <div class="project-card">
-      <h3>Student Support Helpdesk Agent</h3>
+    <div class="card">
+      <h2>Student Support Helpdesk Agent</h2>
       <p>
         Salesforce-based automated helpdesk for IT, hostel, and academic
         issues using Case Object customization, Flow Builder, and
         Lightning App Builder.
       </p>
-      <div class="tech">
-        Tech: Salesforce, Flow Builder, Lightning App Builder
-      </div>
+      <p><strong>Tech:</strong> Salesforce, Flow Builder, Lightning App Builder</p>
     </div>
 
-    <div class="project-card">
-      <h3>Predictive Modelling for Cardiovascular Disease</h3>
+    <div class="card">
+      <h2>Predictive Modelling for Cardiovascular Disease</h2>
       <p>
         Deep learning model using CNN–LSTM to predict cardiovascular
         disease risk from patient data for early detection and
         personalized care.
       </p>
-      <div class="tech">
-        Tech: Python, CNN, LSTM, Machine Learning
-      </div>
+      <p><strong>Tech:</strong> Python, CNN, LSTM, Machine Learning</p>
     </div>
 
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
+    <div class="card">
+      <h2>Portfolio Website</h2>
       <p>
-        Personal multi-page portfolio website designed to showcase
-        skills, projects, and contact details with a clean UI.
+        Multi-page responsive portfolio website designed to showcase
+        skills, projects, and contact details with a clean UI and
+        backend integration.
       </p>
-      <div class="tech">
-        Tech: HTML, CSS, JavaScript
-      </div>
+      <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
     </div>
 
   </div>
+
 </div>
 
+<script src="js/script.js"></script>
 </body>
 </html>
