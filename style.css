@@ -1,0 +1,152 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+  padding-top: 90px;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(2, 6, 23, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav a {
+  color: #cbd5f5;
+  text-decoration: none;
+  margin-left: 22px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #7c3aed;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+  font-size: 36px;
+  color: #7c3aed;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+/* ===== PARAGRAPH ===== */
+p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cbd5f5;
+}
+
+/* ===== HERO ===== */
+header {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #7c3aed;
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid #7c3aed;
+  color: #7c3aed;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: #020617;
+  padding: 30px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+}
+
+/* ===== ICONS ===== */
+.icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.icons a {
+  background: #1e293b;
+  padding: 14px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.icons a:hover {
+  background: #7c3aed;
+}
+
+/* ===== FORMS ===== */
+form label {
+  margin-top: 12px;
+  display: block;
+  color: #cbd5f5;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: none;
+  background: #1e293b;
+  color: white;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid #7c3aed;
+}
+
+/* ===== PROJECT GRID ===== */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
